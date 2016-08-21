@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 21, 2016 at 09:15 AM
+-- Generation Time: Aug 21, 2016 at 09:24 AM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -64,7 +64,8 @@ INSERT INTO `activity` (`id`, `class`, `module`, `object_model`, `object_id`) VA
 (23, 'humhub\\modules\\content\\activities\\ContentCreated', 'content', 'humhub\\modules\\post\\models\\Post', 10),
 (24, 'humhub\\modules\\content\\activities\\ContentCreated', 'content', 'humhub\\modules\\post\\models\\Post', 11),
 (25, 'humhub\\modules\\content\\activities\\ContentCreated', 'content', 'humhub\\modules\\post\\models\\Post', 12),
-(26, 'humhub\\modules\\content\\activities\\ContentCreated', 'content', 'humhub\\modules\\post\\models\\Post', 13);
+(26, 'humhub\\modules\\content\\activities\\ContentCreated', 'content', 'humhub\\modules\\post\\models\\Post', 13),
+(27, 'humhub\\modules\\content\\activities\\ContentCreated', 'content', 'humhub\\modules\\post\\models\\Post', 14);
 
 -- --------------------------------------------------------
 
@@ -214,7 +215,9 @@ INSERT INTO `content` (`id`, `guid`, `object_model`, `object_id`, `visibility`, 
 (36, 'd8cb9f27-e653-48d4-8cdb-95f241caff98', 'humhub\\modules\\post\\models\\Post', 12, 1, 0, '0', '2016-08-21 00:15:00', 1, '2016-08-21 00:15:00', 1, 1),
 (37, '35a127ab-4ad3-4a7a-9017-d0fd75355440', 'humhub\\modules\\activity\\models\\Activity', 25, 1, 0, '0', '2016-08-21 00:15:00', 1, '2016-08-21 00:15:00', 1, 1),
 (38, '82d8b1c6-bd0f-4995-83dd-da66be087107', 'humhub\\modules\\post\\models\\Post', 13, 1, 0, '0', '2016-08-21 00:15:05', 1, '2016-08-21 00:15:05', 1, 1),
-(39, '3f9e84ef-d903-42a0-95e2-9bab82cb09de', 'humhub\\modules\\activity\\models\\Activity', 26, 1, 0, '0', '2016-08-21 00:15:05', 1, '2016-08-21 00:15:05', 1, 1);
+(39, '3f9e84ef-d903-42a0-95e2-9bab82cb09de', 'humhub\\modules\\activity\\models\\Activity', 26, 1, 0, '0', '2016-08-21 00:15:05', 1, '2016-08-21 00:15:05', 1, 1),
+(40, '6e026a97-a2d5-411d-a4be-4eb8928f2e64', 'humhub\\modules\\post\\models\\Post', 14, 1, 0, '0', '2016-08-21 00:20:14', 1, '2016-08-21 00:20:14', 1, 1),
+(41, 'a784365e-a7c8-43bf-a5dc-0035ee648fe6', 'humhub\\modules\\activity\\models\\Activity', 27, 1, 0, '0', '2016-08-21 00:20:14', 1, '2016-08-21 00:20:14', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -755,7 +758,8 @@ INSERT INTO `post` (`id`, `message_2trash`, `message`, `url`, `created_at`, `cre
 (10, NULL, 'test', NULL, '2016-08-21 00:07:16', 1, '2016-08-21 00:07:16', 1),
 (11, NULL, '1', NULL, '2016-08-21 00:14:54', 1, '2016-08-21 00:14:54', 1),
 (12, NULL, 'This is one', NULL, '2016-08-21 00:15:00', 1, '2016-08-21 00:15:00', 1),
-(13, NULL, 'This is trwo', NULL, '2016-08-21 00:15:05', 1, '2016-08-21 00:15:05', 1);
+(13, NULL, 'This is trwo', NULL, '2016-08-21 00:15:05', 1, '2016-08-21 00:15:05', 1),
+(14, NULL, 'This is three', NULL, '2016-08-21 00:20:14', 1, '2016-08-21 00:20:14', 1);
 
 -- --------------------------------------------------------
 
@@ -1187,7 +1191,8 @@ INSERT INTO `user_follow` (`id`, `object_model`, `object_id`, `user_id`, `send_n
 (14, 'humhub\\modules\\post\\models\\Post', 10, 1, 1),
 (15, 'humhub\\modules\\post\\models\\Post', 11, 1, 1),
 (16, 'humhub\\modules\\post\\models\\Post', 12, 1, 1),
-(17, 'humhub\\modules\\post\\models\\Post', 13, 1, 1);
+(17, 'humhub\\modules\\post\\models\\Post', 13, 1, 1),
+(18, 'humhub\\modules\\post\\models\\Post', 14, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -1222,7 +1227,7 @@ CREATE TABLE `user_http_session` (
 INSERT INTO `user_http_session` (`id`, `expire`, `user_id`, `data`) VALUES
 ('hnp287q5ts5bjgo2uprt9og8u3', 1471679887, NULL, 0x5f5f666c6173687c613a303a7b7d5f5f72657475726e55726c7c733a32303a222f68756d6875622f696e6465782e7068703f723d223b),
 ('uo7mr48o436jjqn10ar45oalu0', 1471761127, 1, 0x5f5f666c6173687c613a303a7b7d5f5f69647c693a313b63757272656e7441757468436c69656e7449647c733a353a226c6f63616c223b),
-('25g7b7gvm9863g88mpq7t10v25', 1471765173, 1, 0x5f5f666c6173687c613a303a7b7d5f5f69647c693a313b63757272656e7441757468436c69656e7449647c733a353a226c6f63616c223b);
+('25g7b7gvm9863g88mpq7t10v25', 1471765713, 1, 0x5f5f666c6173687c613a303a7b7d5f5f69647c693a313b63757272656e7441757468436c69656e7449647c733a353a226c6f63616c223b);
 
 -- --------------------------------------------------------
 
@@ -1403,7 +1408,9 @@ INSERT INTO `wall_entry` (`id`, `wall_id`, `content_id`, `created_at`, `created_
 (36, 1, 37, '2016-08-21 00:15:00', 1, '2016-08-21 00:15:00', 1),
 (37, 1, 36, '2016-08-21 00:15:00', 1, '2016-08-21 00:15:00', 1),
 (38, 1, 39, '2016-08-21 00:15:05', 1, '2016-08-21 00:15:05', 1),
-(39, 1, 38, '2016-08-21 00:15:05', 1, '2016-08-21 00:15:05', 1);
+(39, 1, 38, '2016-08-21 00:15:05', 1, '2016-08-21 00:15:05', 1),
+(40, 1, 41, '2016-08-21 00:20:14', 1, '2016-08-21 00:20:14', 1),
+(41, 1, 40, '2016-08-21 00:20:14', 1, '2016-08-21 00:20:14', 1);
 
 --
 -- Indexes for dumped tables
@@ -1744,7 +1751,7 @@ ALTER TABLE `wall_entry`
 -- AUTO_INCREMENT for table `activity`
 --
 ALTER TABLE `activity`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `calendar_entry`
 --
@@ -1774,7 +1781,7 @@ ALTER TABLE `comment`
 -- AUTO_INCREMENT for table `content`
 --
 ALTER TABLE `content`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 --
 -- AUTO_INCREMENT for table `contentcontainer`
 --
@@ -1844,7 +1851,7 @@ ALTER TABLE `poll_answer_user`
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `profile_field`
 --
@@ -1894,7 +1901,7 @@ ALTER TABLE `user_auth`
 -- AUTO_INCREMENT for table `user_follow`
 --
 ALTER TABLE `user_follow`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT for table `user_friendship`
 --
@@ -1929,7 +1936,7 @@ ALTER TABLE `wall`
 -- AUTO_INCREMENT for table `wall_entry`
 --
 ALTER TABLE `wall_entry`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
